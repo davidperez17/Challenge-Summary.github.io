@@ -4,6 +4,19 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  /* ### Primary */
+
+  --Paleblue: hsl(225, 100%, 94%);
+  --Brightblue: hsl(245, 75%, 52%);
+
+  /* ### Neutral */
+
+  --Verypaleblue: hsl(225, 100%, 98%);
+  --Desaturatedblue: hsl(224, 23%, 55%);
+  --Darkblue: hsl(223, 47%, 23%);
+}
 html {
   font-size: 62.5%;
 }
@@ -14,7 +27,7 @@ body {
   justify-content: center;
   width: 100vw;
   height: 100vh;
-  background-color: hsl(225, 100%, 94%);
+  background-color: var(--Paleblue);
   background-image: url(./images/pattern-background-desktop.svg);
   background-repeat: no-repeat;
   font-family: "Red Hat Display", sans-serif;
@@ -45,12 +58,13 @@ body {
   text-align: center;
   font-size: 2.2rem;
   font-weight: 900;
+  color: var(--Darkblue);
 }
 
 .card__text {
   text-align: center;
   font-size: 1.5rem;
-  color: hsl(224, 23%, 55%);
+  color: var(--Desaturatedblue);
   font-weight: 400;
   line-height: 1.5;
 }
@@ -65,7 +79,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: hsl(225, 100%, 98%);
+  background-color: var(--Verypaleblue);
 
   font-size: 1.5rem;
 }
@@ -80,11 +94,12 @@ body {
 }
 
 .plan__dollars {
+  font-weight: 500;
   color: hsl(0, 0%, 43%);
 }
 
 .plan__change {
-  color: hsl(245, 75%, 52%);
+  color: var(--Brightblue);
   text-decoration: underline;
   font-weight: 900;
 
@@ -96,7 +111,7 @@ body {
   margin: 0 auto;
   padding: 15px 0;
   font-size: 1.4rem;
-  background-color: hsl(245, 75%, 52%);
+  background-color: var(--Brightblue);
   border: none;
   border-radius: 10px;
   color: #fff;
@@ -112,7 +127,7 @@ body {
   margin: 0 auto 20px;
   text-align: center;
   font-size: 1.5rem;
-  color: hsl(0, 0%, 39%);
+  color: var(--Desaturatedblue);
   font-weight: 700;
 }
 
