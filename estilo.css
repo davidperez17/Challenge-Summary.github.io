@@ -104,6 +104,18 @@ body {
   font-weight: 900;
 
   font-size: 1.3rem;
+  cursor: pointer;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  transition: 0.3s;
+}
+.plan__change:active {
+  opacity: 0.5;
+  text-decoration: none;
 }
 
 .btn {
@@ -120,6 +132,17 @@ body {
   letter-spacing: 1px;
   box-shadow: hsla(251, 100%, 47%, 0.322) 0px 10px 15px -3px,
     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  transition: 0.3s;
+  cursor: pointer;
+}
+.btn:active {
+  opacity: 0.5;
 }
 
 .cancel {
@@ -129,6 +152,17 @@ body {
   font-size: 1.5rem;
   color: var(--Desaturatedblue);
   font-weight: 700;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  transition: 0.3s;
+  cursor: pointer;
+}
+.cancel:active {
+  color: var(--Darkblue);
 }
 
 /* Atributos css */
